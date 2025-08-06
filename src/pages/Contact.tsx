@@ -3,10 +3,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { 
-  Mail, 
-  MessageCircle, 
-  Phone, 
+import {
+  Mail,
+  MessageCircle,
+  Phone,
   MapPin,
   Send,
   Clock,
@@ -47,7 +47,7 @@ Message: ${formData.message}`
 
   const handleEmailSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Simulate email sending
     const emailBody = encodeURIComponent(
       `Name: ${formData.name}
@@ -58,14 +58,14 @@ Subject: ${formData.subject}
 Message:
 ${formData.message}`
     );
-    
+
     window.open(`mailto:info@jud-ex.com?subject=${encodeURIComponent(formData.subject)}&body=${emailBody}`, '_blank');
-    
+
     toast({
       title: "Message Sent!",
       description: "Thank you for reaching out. We'll get back to you soon.",
     });
-    
+
     // Reset form
     setFormData({
       name: '',
@@ -103,14 +103,14 @@ ${formData.message}`
       title: "Remote First",
       description: "We work globally",
       value: "Worldwide",
-      action: () => {}
+      action: () => { }
     }
   ];
 
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
+
       <main className="pt-20">
         {/* Hero Section */}
         <section className="py-20 bg-gradient-hero">
@@ -119,7 +119,7 @@ ${formData.message}`
               Contact Us
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Ready to start your next project? Get in touch with our team of experts. 
+              Ready to start your next project? Get in touch with our team of experts.
               We're here to help bring your ideas to life.
             </p>
           </div>
@@ -130,8 +130,8 @@ ${formData.message}`
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
               {contactInfo.map((contact, index) => (
-                <Card 
-                  key={index} 
+                <Card
+                  key={index}
                   className="bg-gradient-card border-border hover:shadow-card transition-all duration-300 cursor-pointer group"
                   onClick={contact.action}
                 >
@@ -160,10 +160,10 @@ ${formData.message}`
                 <div>
                   <h2 className="text-3xl font-bold mb-6">Send us a Message</h2>
                   <p className="text-muted-foreground mb-8">
-                    Fill out the form below and we'll get back to you within 24 hours. 
+                    Fill out the form below and we'll get back to you within 24 hours.
                     You can also reach us directly via WhatsApp for immediate assistance.
                   </p>
-                  
+
                   <form onSubmit={handleEmailSubmit} className="space-y-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <Input
@@ -184,7 +184,7 @@ ${formData.message}`
                         className="bg-background border-border"
                       />
                     </div>
-                    
+
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <Input
                         name="company"
@@ -202,7 +202,7 @@ ${formData.message}`
                         className="bg-background border-border"
                       />
                     </div>
-                    
+
                     <Textarea
                       name="message"
                       placeholder="Tell us about your project..."
@@ -212,16 +212,16 @@ ${formData.message}`
                       rows={6}
                       className="bg-background border-border"
                     />
-                    
+
                     <div className="flex flex-col sm:flex-row gap-4">
-                      <Button 
-                        type="submit" 
+                      <Button
+                        type="submit"
                         className="flex-1 bg-gradient-primary hover:shadow-glow"
                       >
                         <Mail className="mr-2 h-4 w-4" />
                         Send Email
                       </Button>
-                      <Button 
+                      <Button
                         type="button"
                         onClick={handleWhatsApp}
                         variant="outline"
@@ -239,7 +239,7 @@ ${formData.message}`
                   <div>
                     <h3 className="text-xl font-semibold mb-4">Get in Touch</h3>
                     <p className="text-muted-foreground mb-6">
-                      We're a remote-first development team working with clients worldwide. 
+                      We're a remote-first development team working with clients worldwide.
                       No matter where you are, we're ready to help you build something amazing.
                     </p>
                   </div>
@@ -252,7 +252,7 @@ ${formData.message}`
                         <p className="text-muted-foreground">We typically respond within 2-4 hours during business days</p>
                       </div>
                     </div>
-                    
+
                     <div className="flex items-start space-x-4">
                       <Globe className="h-6 w-6 text-primary mt-1" />
                       <div>
@@ -260,7 +260,7 @@ ${formData.message}`
                         <p className="text-muted-foreground">Working across all time zones to serve clients worldwide</p>
                       </div>
                     </div>
-                    
+
                     <div className="flex items-start space-x-4">
                       <Send className="h-6 w-6 text-primary mt-1" />
                       <div>
@@ -273,7 +273,7 @@ ${formData.message}`
                   <div className="bg-gradient-primary p-6 rounded-2xl">
                     <h4 className="font-semibold text-primary-foreground mb-2">Quick Start</h4>
                     <p className="text-primary-foreground/90 text-sm">
-                      Ready to begin immediately? Click the WhatsApp button for instant communication 
+                      Ready to begin immediately? Click the WhatsApp button for instant communication
                       and let's discuss your project requirements in real-time.
                     </p>
                   </div>
