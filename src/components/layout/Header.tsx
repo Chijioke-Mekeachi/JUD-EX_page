@@ -22,7 +22,7 @@ const Header = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2">
           <img 
-            src="/lovable-uploads/8acb45b2-3107-4bd7-88ca-6710e955d4fe.png" 
+            src="/image/logo.png" 
             alt="JUD-EX Logo" 
             className="h-10 w-auto"
           />

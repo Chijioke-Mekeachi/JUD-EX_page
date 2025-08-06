@@ -35,14 +35,14 @@ const Contact = () => {
 
   const handleWhatsApp = () => {
     const message = encodeURIComponent(
-      `Hi! I'm interested in your development services. 
+      `Hi! I'm interested in your development services, at JUD-ex. 
       
 Name: ${formData.name}
 Company: ${formData.company}
 Subject: ${formData.subject}
 Message: ${formData.message}`
     );
-    window.open(`https://wa.me/1234567890?text=${message}`, '_blank');
+    window.open(`https://wa.me/2348089513673?text=${message}`, '_blank');
   };
 
   const handleEmailSubmit = async (e: React.FormEvent) => {
@@ -88,15 +88,15 @@ ${formData.message}`
       icon: MessageCircle,
       title: "WhatsApp",
       description: "Quick chat on WhatsApp",
-      value: "+1 (555) 123-4567",
+      value: "+234 8089513673",
       action: handleWhatsApp
     },
     {
       icon: Phone,
       title: "Call Us",
       description: "Speak directly with our team",
-      value: "+1 (555) 123-4567",
-      action: () => window.open('tel:+15551234567', '_blank')
+      value: "+234 8089060727",
+      action: () => window.open('tel:+2348089060727', '_blank')
     },
     {
       icon: Globe,
