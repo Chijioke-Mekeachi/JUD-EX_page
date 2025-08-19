@@ -20,7 +20,7 @@ const Services = () => {
       icon: Code2,
       title: "Frontend Development",
       description: "Modern, responsive web applications using React, Vue, Angular, and cutting-edge frameworks.",
-      features: ["React & Next.js", "Vue.js & Nuxt.js", "Angular", "TypeScript", "Responsive Design", "Performance Optimization"],
+      features: ["React & Next.js", "Vue.js & Nuxt.js", "TypeScript", "Responsive Design", "Performance Optimization"],
       gradient: "from-blue-500 to-cyan-500"
     },
     {
@@ -34,13 +34,13 @@ const Services = () => {
       icon: Smartphone,
       title: "Mobile Applications",
       description: "Native and cross-platform mobile apps for iOS and Android with seamless user experiences.",
-      features: ["React Native", "Flutter", "iOS Development", "Android Development", "Cross-Platform", "App Store Deployment"],
+      features: ["React Native", "iOS Development", "Android Development", "Cross-Platform", "App Store Deployment"],
       gradient: "from-purple-500 to-pink-500"
     },
     {
       icon: Shield,
       title: "Security Testing",
-      description: "Comprehensive security audits and penetration testing for web and mobile applications.",
+      description: "Comprehensive penetration testing for web and mobile applications.",
       features: ["Vulnerability Assessment", "Penetration Testing", "Code Review", "Security Audits", "Compliance Testing", "Risk Analysis"],
       gradient: "from-red-500 to-orange-500"
     },
@@ -55,7 +55,7 @@ const Services = () => {
       icon: Bot,
       title: "AI Solutions",
       description: "Artificial intelligence and machine learning implementations to automate and enhance your business.",
-      features: ["Machine Learning", "Natural Language Processing", "Computer Vision", "AI Chatbots", "Data Analytics", "Automation"],
+      features: ["Machine Learning","AI Chatbots", "Data Analytics", "Automation"],
       gradient: "from-indigo-500 to-blue-500"
     }
   ];
